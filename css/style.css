@@ -1,5 +1,6 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@500&display=swap');
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
@@ -16,7 +17,6 @@ header{
 .head-1{
     display: flex;
     width: 1100px;
-    flex-direction:row;
     justify-content: space-between;
     background-color: #FFF4E7;
     border-radius: 10px;
@@ -34,6 +34,8 @@ header{
 }
 .header-main-two a{
     padding: 10px;
+    text-decoration: none;
+    color: black;
 }
 .head-2{
     /* border: 0.5px solid #FFF4E7; */
@@ -200,12 +202,9 @@ header{
 .main-2 .main-2-info{
     position: relative;
 }
-.main-2 .main-2-info .btn{
-    position: absolute;
+.main-2 .btn{
     height: 100px;
     width: 300px;
-    top:50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FF900E;
     color: white;
@@ -356,6 +355,7 @@ footer{
         margin-top: 70px;
     }
     .head img{
+        margin-left: 0px;
         width: 90%;
         height: 315px;
         margin: 25px;
@@ -399,7 +399,7 @@ footer{
     .main-2{
         width: 100%;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         
     }
     .main-2 .main-1-doc{
