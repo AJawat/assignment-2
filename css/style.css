@@ -293,6 +293,7 @@ footer{
 }
 .foot .p{
     color: #979797;
+    font-size: 10px;
 }
 /* -----------------------------
 --------------Extra-------------
@@ -315,7 +316,193 @@ footer{
     border: 1px solid orange;
     box-shadow: 5px 5px 25px 5px rgb(225, 225, 225);
 }
-.extra-section:hover .resumeinfo p{
-    background-color: orange;
+.extra-section .resume .resumeinfo p{
+    background-color: rgb(255, 255, 255);
     transition: 2s;
+}
+.extra-section .resume .resumeinfo p:hover{
+    background-color: #FF900E;
+    transition: 0.5s;
+}
+
+/* -----------------------------
+------------Head-Media----------
+----------------------------- */
+@media only screen and (max-width:576px){
+    .head{
+        width: 100%;
+    }
+    .head-1, .head-2{
+        width: 100%;
+    }
+    .header-main{
+    }
+    .head .head-1 .header-main-two{
+        display: flex;
+        flex-direction: column;   
+    }
+    .head-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .head-2-2{
+        width: 100%;
+    }
+    .head-2-button{
+        margin-top: 70px;
+    }
+    .head img{
+        width: 90%;
+        height: 315px;
+        margin: 25px;
+    }
+}
+/* -----------------------------
+-----------main1-Media----------
+----------------------------- */
+@media only screen and (max-width:576px) {
+    .main-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .main1 .main-1 .main-1-img .main-img{
+        width: 100%;
+        display: grid;
+        margin-right: 40px;
+        grid-template-columns: 1fr;
+    }
+    .main1 .main-1 .main-1-img .main-img img{
+        box-shadow: 5px 5px 25px 5px rgb(225, 225, 225);
+    }
+    .main-1-info{
+        width: 100%;
+        text-align: center;
+        margin-right: 40px;
+    }
+    .main-1-info p{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .main-1-info .head-2-button{
+        margin-top: 35px;
+    }
+}
+/* -----------------------------
+-----------main2-Media----------
+----------------------------- */
+@media only screen and (max-width:576px){
+    .main-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .main-2 .main-1-doc{
+        align-items: center;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main-2 .main-1-doc .main-doc .main-docs-details{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: justify;
+    }
+    .main-docs{
+        margin-left: 40px;
+    }
+    .main-doc1{
+        width: 92%;
+    }
+    .main-2 .main-2-info img{
+        height: 500px;
+        width: 300px;
+    }
+    .main-2 .main-2-info .btn{
+        height: 50px;
+        width: 200px;
+        padding-bottom:55px;
+    }
+}
+/* -----------------------------
+-----------main3-Media----------
+----------------------------- */
+@media only screen and (max-width:576px) {
+    .main-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .main-3 p{
+        width: 90%;
+    }
+    .main-3 .facts{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main-3 .facts .fact-1{
+        margin-bottom: 10px;
+    }
+}
+/* -------------------------------
+-----------Extra-Section----------
+------------------------------- */
+@media only screen and (max-width:576px) {
+    .extra-section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .extra-section .resume{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 70%;
+    }
+}
+/* -------------------------------
+-----------main4-Section----------
+------------------------------- */
+@media only screen and (max-width: 576px) {
+    .main-4{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .main-4 .s-text{
+        width:770px;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-left: 15px;
+    }
+    .main-4 .s-text h2{
+        padding-left: 300px;
+    }
+    .main-4 .s-text p{
+        width: 400px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-right: 0px;
+    }
+    .main-4 .Sponsors{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}
+/* -------------------------------
+---------------Footer-------------
+------------------------------- */
+footer{
+    margin-left: 30px;
+    margin-right: 30px;
 }
